@@ -5,19 +5,43 @@
 <head>
   <link rel="stylesheet" href="css/main.css" />﻿
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src = "https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+
+  </script>
   <title> SMetro </title>
 </head>
 
 <body>
   <h1> SMetro </h1>
   <h5>For your quick BPM needs!</h5>
-  <button id="tapper"> TAP! </button>
-  <p id="bpm">0</p>
-  <p class="Instructions">Works by simply taking your taps and calculating the BPM by the intervals that lie in between!</p>
-  <p class="Instructions">Resets after 3 seconds.</p>
+
+
+  <div class="row">
+    <div class="column">
+      <p class="Instructions">Works by simply taking your taps and calculating the BPM by the intervals that lie in between!</p>
+      <p class="Instructions">Resets after 3 seconds.</p>
+    </div>
+    <div class="column">
+      <button id="tapper"> TAP! </button>
+      <br> <br>
+      <button id="save"> Save BPM </button>
+    </div>
+    <div  class="column">
+      <h4 style="margin-right: 40%; padding:0;">Your saved BPMs</h4>
+      <div id = "savedbpm">
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
   <br><br><br><br><br>
   <p id='outro'>Ahzam Ahmad &copy; 2019</p>
   <script src="app.js" type="text/javascript"></script>
+
 </body>
 
 </html>
